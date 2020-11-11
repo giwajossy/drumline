@@ -32,9 +32,9 @@ for (var i = 0; i<numberOfButtons; i++) {
     document.querySelectorAll(".instrument")[i].addEventListener("click", buttonClicked);
 
     function buttonClicked() {
-        var buttonContent = document.querySelectorAll(".instrument")[i].innerText;
-        alert(buttonContent);
-        // alert("I got here");
+        // var buttonContent = document.querySelectorAll(".instrument")[i].innerText;
+        // alert(buttonContent);
+        alert("got clicked");
     
     }
 }
