@@ -11,7 +11,6 @@ body {
     text-align: center;
     padding: 0;
     margin: 0;
-    transition: .5s ease-in-out;
 }
 
 
@@ -23,7 +22,7 @@ body {
 }
 
 .intro h1, .intro h3 {
-    /* text-shadow: 0px 0px 1px #808080; */
+    text-align: center;
 }
 
 .intro:hover {
