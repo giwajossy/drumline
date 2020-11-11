@@ -22,6 +22,10 @@ body {
     transition: .5s ease-in-out;
 }
 
+.intro h1, .intro h3 {
+    /* text-shadow: 0px 0px 1px #808080; */
+}
+
 .intro:hover {
     box-shadow: none;
     transition: .5s ease-in-out;
@@ -40,6 +44,7 @@ body {
 }
 
 .kits button {
+    display: inline;
     background: #ffffff;
     width: 13%;
     padding: 2%;
@@ -56,3 +61,15 @@ body {
 
 
 
+/* Mobile View */
+@media screen and (max-width: 667px) {
+
+    .kits button {
+        display: block;
+        width: 30%;
+        margin-bottom: 2%;
+        margin-left: 35%;
+        padding: 3%;
+    }
+
+}
