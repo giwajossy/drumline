@@ -20,7 +20,7 @@ function colorChange() {
         // document.querySelector(".kits button").style.borderBottom = "2em solid rgba("+red+","+green+","+blue+","+alpha+")"; 
         document.getElementById("body").style.backgroundColor = "rgba("+red+","+green+","+blue+","+alpha+")"; 
         var package = red+","+green+","+blue;
-        document.getElementsByTagName("Meta")[4].setAttribute("content", rgb2hex(package));
+        document.getElementsByTagName("Meta")[3].setAttribute("content", rgb2hex(package));
         // document.getElementsByTagName("Meta")[4].setAttribute("content", "rgba("+red+","+green+","+blue+","+alpha+")");
     }, 5000);
 }
