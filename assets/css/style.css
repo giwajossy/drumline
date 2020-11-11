@@ -18,7 +18,7 @@ body {
     /* border-bottom: 1px solid rgba(0,0,0,0.8); */
     padding: 3%;
     box-shadow: 1px 4px 10px rgba(0,0,0,0.6);
-    transition: .5s ease-in-out;
+    /* transition: .5s ease-in-out; */
 }
 
 .intro h1, .intro h3 {
@@ -34,7 +34,7 @@ body {
 .kits {
     padding:6% 0 6% 0;
     box-shadow: 1px 4px 10px rgba(0,0,0,0.6);
-    transition: .5s ease-in-out;
+    /* transition: .5s ease-in-out; */
 }
 
 .kits:hover {
