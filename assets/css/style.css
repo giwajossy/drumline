@@ -1,0 +1,58 @@
+@import url('https://fonts.googleapis.com/css2?family=Bellota:wght@400;700&display=swap');
+
+* {
+    font-family: 'Bellota', cursive;
+    transition: .5s ease-in-out;
+}
+
+
+body {
+    background: rgba(192,57,43,1);
+    text-align: center;
+    padding: 0;
+    margin: 0;
+    transition: .5s ease-in-out;
+}
+
+
+.intro {
+    /* border-bottom: 1px solid rgba(0,0,0,0.8); */
+    padding: 3%;
+    box-shadow: 1px 4px 10px rgba(0,0,0,0.6);
+    transition: .5s ease-in-out;
+}
+
+.intro:hover {
+    box-shadow: none;
+    transition: .5s ease-in-out;
+}
+
+
+.kits {
+    padding:6% 0 6% 0;
+    box-shadow: 1px 4px 10px rgba(0,0,0,0.6);
+    transition: .5s ease-in-out;
+}
+
+.kits:hover {
+    box-shadow: none;
+    transition: .5s ease-in-out;
+}
+
+.kits button {
+    background: #ffffff;
+    width: 13%;
+    padding: 2%;
+    outline: none;
+    border: none;
+    /* border-bottom: 2em solid transparent; */
+    transition: .5s ease-in-out;
+}
+
+.kits:hover button:hover {
+    border-bottom: 1em solid #ffffff;
+    transition: .5s ease-in-out;
+}
+
+
+
