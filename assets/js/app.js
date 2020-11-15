@@ -10,20 +10,61 @@ function rgb2hex(rgb){
 
 
 function colorChange() {
-    setInterval(function(){ 
+    var valueOfInput = parseInt(prompt("Set interval [in seconds]"));
+    
+    
+
+    
+
+    
+    setInterval(function() { 
         let red = Math.floor(Math.random() * 255);
         let green = Math.floor(Math.random() * 255);
         let blue = Math.floor(Math.random() * 255);
         let alpha = 1;
-        // document.getElementById("body").style.backgroundColor = "rgba(192,57,43,1)";
         
         var package = red+","+green+","+blue;
         document.getElementsByTagName("Meta")[3].setAttribute("content", rgb2hex(package));
-        document.getElementById("body").style.backgroundColor = "rgba("+red+","+green+","+blue+","+alpha+")"; 
-        // document.getElementsByTagName("Meta")[4].setAttribute("content", "rgba("+red+","+green+","+blue+","+alpha+")");
-    }, 5000);
+        document.getElementById("body").style.backgroundColor = "rgba("+red+","+green+","+blue+","+alpha+")";
+        
+        console.log(package);    
+    }, valueOfInput+"000");
+
+        
+        
+
+    
+    
 }
 
+
+// function colorManipulation() {
+
+//     var valueOfInput = parseInt(prompt("Set number of random colors?"));
+//     for (var i = 0; i<valueOfInput; i++) {
+//         var color = [];
+
+        
+        
+//         let red = Math.floor(Math.random() * 255);
+//         let green = Math.floor(Math.random() * 255);
+//         let blue = Math.floor(Math.random() * 255);
+//         let alpha = 1;
+        
+//         var package = red+","+green+","+blue;
+//         document.getElementsByTagName("Meta")[3].setAttribute("content", rgb2hex(package));
+//         document.getElementById("body").style.backgroundColor = "rgba("+red+","+green+","+blue+","+alpha+")";
+        
+//         console.log(color.push(package));
+//         console.log(package);
+
+//     }
+
+//     // valueOfInput = x;
+//     // as long as i <= valueOfInput
+//     //  show x random colors
+
+// }
 
 
 var numberOfButtons = document.querySelectorAll(".instrument").length;
@@ -35,6 +76,8 @@ for (var i = 0; i<numberOfButtons; i++) {
         // var buttonContent = document.querySelectorAll(".instrument")[i].innerText;
         // alert(buttonContent);
         alert("got clicked");
+        var audio = new Audio("assets/sounds/fem.mp3");
+        audio.play();
     
     }
 }
