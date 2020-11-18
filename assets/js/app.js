@@ -9,75 +9,37 @@ function rgb2hex(rgb){
 
 
 
-function colorChange() {
-    var valueOfInput = parseInt(prompt("Set interval [in seconds]"));
+function bgColorChange() {
+       
+    var process = setInterval(randomizeBgColor, 3000);
     
-    
-
-    
-
-    
-    setInterval(function() { 
+    function randomizeBgColor(e) { 
         let red = Math.floor(Math.random() * 255);
         let green = Math.floor(Math.random() * 255);
         let blue = Math.floor(Math.random() * 255);
         let alpha = 1;
         
-        var package = red+","+green+","+blue;
+        let package = red+","+green+","+blue;
         document.getElementsByTagName("Meta")[3].setAttribute("content", rgb2hex(package));
         document.getElementById("body").style.backgroundColor = "rgba("+red+","+green+","+blue+","+alpha+")";
         
-        console.log(package);    
-    }, valueOfInput+"000");
-
+        console.log(package);
         
+    }
         
-
-    
-    
 }
-
-
-// function colorManipulation() {
-
-//     var valueOfInput = parseInt(prompt("Set number of random colors?"));
-//     for (var i = 0; i<valueOfInput; i++) {
-//         var color = [];
-
-        
-        
-//         let red = Math.floor(Math.random() * 255);
-//         let green = Math.floor(Math.random() * 255);
-//         let blue = Math.floor(Math.random() * 255);
-//         let alpha = 1;
-        
-//         var package = red+","+green+","+blue;
-//         document.getElementsByTagName("Meta")[3].setAttribute("content", rgb2hex(package));
-//         document.getElementById("body").style.backgroundColor = "rgba("+red+","+green+","+blue+","+alpha+")";
-        
-//         console.log(color.push(package));
-//         console.log(package);
-
-//     }
-
-//     // valueOfInput = x;
-//     // as long as i <= valueOfInput
-//     //  show x random colors
-
-// }
 
 
 var numberOfButtons = document.querySelectorAll(".instrument").length;
 
 for (var i = 0; i<numberOfButtons; i++) {
-    document.querySelectorAll(".instrument")[i].addEventListener("click", buttonClicked);
+    document.querySelectorAll(".instrument")[i].addEventListener("click", function() {
 
-    function buttonClicked() {
-        // var buttonContent = document.querySelectorAll(".instrument")[i].innerText;
-        // alert(buttonContent);
-        alert("got clicked");
-        var audio = new Audio("assets/sounds/fem.mp3");
+        var audio = new Audio("assets/sounds/snareDrum.mp3");
         audio.play();
+
+    });
+
+
     
-    }
 }
