@@ -55,7 +55,7 @@ body {
 
 .kits:hover button:hover {
     /* border-bottom: 1em solid #ffffff; */
-    background: rgba(192,57,43,1);
+    background: rgba(255, 255, 255, 0.7);
     transition: .5s ease-in-out;
 }
 
