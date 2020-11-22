@@ -1,3 +1,10 @@
+var numberOfButtons = document.querySelectorAll("button").length;
+// Add a class="instrument" to every button tag
+for (var i = 0; i<numberOfButtons; i++) {
+    document.querySelectorAll("button")[i].setAttribute("class", "instrument");
+}
+
+
 //Function to convert hex format to a rgb color
 function rgb2hex(rgb){
     rgb = rgb.match(/^[\s+]?(\d+)[\s+]?,[\s+]?(\d+)[\s+]?,[\s+]?(\d+)[\s+]?/i);
@@ -30,9 +37,9 @@ function bgColorChange() {
 }
 
 
-var numberOfButtons = document.querySelectorAll(".instrument").length;
+var numberOfInstruments = document.querySelectorAll(".instrument").length;
 // console.log(numberOfButtons);
-for (var i = 0; i<numberOfButtons; i++) {
+for (var i = 0; i<numberOfInstruments; i++) {
     document.querySelectorAll(".instrument")[i].addEventListener("click", function() {
 
         let instrument = this.getAttribute("id");
