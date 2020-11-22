@@ -80,7 +80,7 @@ body {
         padding: 3%;
     }
 
-    .kits button span {
+    .kits button span, .kits button br {
         display: none;
     }
 
