@@ -59,6 +59,15 @@ body {
 }
 
 
+.kits button span {
+    padding: 3%;
+    border:1px solid rgba(0,0,0,0.7);
+    background: rgba(0,0,0,0.7);
+    color: #ffffff;
+    outline: none;
+}
+
+
 
 /* Mobile View */
 @media screen and (max-width: 667px) {
@@ -70,4 +79,9 @@ body {
         margin-left: 35%;
         padding: 3%;
     }
+
+    .kits button span {
+        display: none;
+    }
+
 }

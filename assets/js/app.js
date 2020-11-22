@@ -22,7 +22,7 @@ function bgColorChange() {
         document.getElementById("body").style.backgroundColor = "rgba("+red+","+green+","+blue+","+alpha+")";
         
 
-        console.log(package);
+        // console.log(package);
         
     }, 3000);
     
@@ -37,6 +37,12 @@ for (var i = 0; i<numberOfButtons; i++) {
 
         let instrument = this.getAttribute("id");
         switch (instrument) {
+            case " cymbal":
+                var audio = new Audio("assets/sounds/cymbal.mp3");
+                audio.play();
+                break;
+                
+                
             case "c snare":
                 var audio = new Audio("assets/sounds/snareDrum.mp3");
                 audio.play();
@@ -68,4 +74,46 @@ for (var i = 0; i<numberOfButtons; i++) {
 
         
     });
+
 }
+
+let key = document.addEventListener("keydown", function(e) {
+
+    // alert(e.key + " got pressed");
+
+    switch (e.key) {
+        case " ":
+            var audio = new Audio("assets/sounds/cymbal.mp3");
+            audio.play();
+            break;
+
+        case "c":
+            var audio = new Audio("assets/sounds/snareDrum.mp3");
+            audio.play();
+            break;
+
+        case "v":
+            var audio = new Audio("assets/sounds/tomDrum.mp3");
+            audio.play();
+            break;
+
+        case "b":
+            var audio = new Audio("assets/sounds/bassKicks.mp3");
+            audio.play();
+            break;
+
+        case "n":
+            var audio = new Audio("assets/sounds/hiHat.mp3");
+            audio.play();
+            break;
+
+        case "m":
+            var audio = new Audio("assets/sounds/drumstickEffect.mp3");
+            audio.play();
+            break;
+    
+        default:
+            break;
+    }
+
+});
